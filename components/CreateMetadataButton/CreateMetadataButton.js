@@ -16,9 +16,10 @@ const CreateMetadataButton = () => {
       toast.error(ipfs.error)
     } else {
       toast.success(
-        <a href={ipfs.url} target="__blank">
-          IPFS Metadata Created (view here)
-        </a>
+        <a href={`https://ipfs.io/ipfs/${ipfs.ipnft}/metadata.json`} target="__blank">
+          bring-your-own-metadata 🌈 (view here)
+        </a>,
+        { autoClose: false, closeOnClick: false }
       )
     }
     setLoading(false)
