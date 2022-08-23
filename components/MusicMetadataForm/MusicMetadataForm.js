@@ -10,6 +10,7 @@ const MusicMetadataForm = () => {
       <MediaPicker
         id="image"
         compact
+        maxSize={100}
         accept="image/jpeg, image/png, image/webp, image/gif"
         label="Song cover image"
         onError={console.error}
@@ -152,6 +153,7 @@ const MusicMetadataForm = () => {
       <MediaPicker
         id="artwork"
         compact
+        maxSize={100}
         accept="image/jpeg, image/png, image/webp, image/gif"
         label="Track artwork"
         onError={console.error}
@@ -179,7 +181,8 @@ const MusicMetadataForm = () => {
       <MediaPicker
         id="visualizer"
         compact
-        accept="image/jpeg, image/png, image/webp, image/gif"
+        maxSize={100}
+        accept="image/jpeg, image/png, image/webp, image/gif, video/mp4"
         label="Track visualizer"
         onError={console.error}
         onChange={(e) => {
@@ -241,7 +244,8 @@ const MusicMetadataForm = () => {
       <MediaPicker
         id="projectArtwork"
         compact
-        accept="image/jpeg, image/png, image/webp, image/gif"
+        maxSize={100}
+        accept="image/jpeg, image/png, image/webp, image/gif, video/mp4"
         label="Project artwork"
         onError={console.error}
         onChange={(e) => {
